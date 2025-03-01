@@ -15,7 +15,7 @@ test('users can authenticate using the login screen', function () {
     $user = User::factory()->create();
 
     $response = LivewireVolt::test('auth.login')
-        ->set('email', $user->email)
+        ->set('email_or_username', $user->email)
         ->set('password', 'password')
         ->call('login');
 
