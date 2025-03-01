@@ -36,7 +36,7 @@ cd Laravel-Livewire-Starterkit-With-Username-or-Email-login
 <p>3. Install Dependencies</p>
 
 ```
-composer install
+composer update
 ```
 
 <p>4. Copy the Environment File</p>
