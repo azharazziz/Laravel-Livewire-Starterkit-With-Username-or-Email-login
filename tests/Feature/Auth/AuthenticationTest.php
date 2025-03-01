@@ -30,7 +30,7 @@ test('users can not authenticate with invalid password', function () {
     $user = User::factory()->create();
 
     $this->post('/login', [
-        'email' => $user->email,
+        'email_or_username' => $user->email,
         'password' => 'wrong-password',
     ]);
 
